@@ -1,0 +1,64 @@
+[project]
+name = "ner-characters-graph"
+version = "0.1.0"
+description = "NER and character graph extraction from literary texts"
+requires-python = ">=3.11,<3.12"
+
+dependencies = [
+  # Jupyter / kernel
+  "ipykernel==6.29.5",
+  "ipywidgets==8.1.5",
+
+  # Core utilities
+  "python-dotenv==1.0.1",
+  "pydantic==2.9.2",
+  "orjson==3.10.7",
+  "tqdm==4.66.5",
+  "rich==13.8.1",
+  "loguru==0.7.2",
+  "regex==2024.7.24",
+  "setuptools==75.6.0",
+
+
+  # Data handling
+  "numpy==1.26.4",
+  "pandas==2.2.2",
+  "pyarrow==17.0.0",
+
+  # Similarity / clustering
+  "rapidfuzz==3.9.6",
+  "scikit-learn==1.4.2",
+
+  # Russian NLP stack (Natasha ecosystem)
+  "razdel==0.5.0",
+  "natasha==1.6.0",
+  "slovnet==0.6.0",
+  "navec==0.10.0",
+  "pymorphy3==2.0.2",
+  "pymorphy3-dicts-ru>=2.4,<3",
+  "yargy==0.16.0",
+
+  # Syntax parsing (for relation extraction)
+  "torch==2.5.1",
+  "stanza==1.8.2",
+
+  # Graph utilities (Neo4j later)
+  "networkx==3.3",
+
+  # LLM-as-judge (optional but pinned)
+  "openai==1.40.6",
+  "tiktoken==0.7.0",
+
+  # Neo4j driver (used later)
+  "neo4j==5.23.1"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest==8.3.2",
+  "ruff==0.6.2",
+  "mypy==1.11.2"
+]
+
+[tool.uv]
+package = true

@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+src/ner_characters_graph.egg-info/PKG-INFO
+src/ner_characters_graph.egg-info/SOURCES.txt
+src/ner_characters_graph.egg-info/dependency_links.txt
+src/ner_characters_graph.egg-info/requires.txt
+src/ner_characters_graph.egg-info/top_level.txt
